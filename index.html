@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ! navbar start -->
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">Documentation</a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Поиск"
+            aria-label="Search"
+            id="search"
+          />
+          <button
+            class="btn btn-outline-light border-dark"
+            type="submit"
+          >
+            Найти
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!--! navbar end -->
+
+    <!--! documentation start -->
+    <div class="d-flex">
+      <div
+        class="mt-5 d-flex flex-column w-100 align-items-center"
+      >
+        <h2>Документация</h2>
+        <input
+          id="Title"
+          class="mb-2 w-50 form-control"
+          type="text"
+          placeholder="ФИО"
+        />
+        <input
+          id="Prise"
+          class="mb-2 w-50 form-control"
+          type="text"
+          placeholder="Телефон"
+        />
+        <input
+          id="Description"
+          class="mb-2 w-50 form-control"
+          type="text"
+          placeholder="О себе"
+        />
+        <input
+          id="Image"
+          class="mb-2 w-50 form-control"
+          type="text"
+          placeholder="Фотография"
+        />
+        <button
+          id="btn-add"
+          class="btn btn-dark w-50"
+        >
+          Добавить
+        </button>
+      </div>
+      <!--!  documentation end -->
+
+      <!--! content start -->
+      <div
+        id="products-list"
+        class="d-flex flex-wrap justify-content-center"
+      ></div>
+    </div>
+
+    <!--! content end -->
+
+    <!--! modal start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="exampleModalLabel"
+            >
+              Изменить
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="mt-5 d-flex flex-column w-100 align-items-center"
+            >
+              <h2>Редактировать</h2>
+              <input
+                id="edit-Title"
+                class="mb-2 w-100 form-control"
+                type="text"
+                placeholder="Title"
+              />
+              <input
+                id="edit-Prise"
+                class="mb-2 w-100 form-control"
+                type="text"
+                placeholder="Prise"
+              />
+              <input
+                id="edit-Description"
+                class="mb-2 w-100 form-control"
+                type="text"
+                placeholder="Description"
+              />
+              <input
+                id="edit-Image"
+                class="mb-2 w-100 form-control"
+                type="text"
+                placeholder="Image URL"
+              />
+              <button
+                id="btn-save-edit"
+                class="btn btn-dark w-50"
+              >
+                Сохранить изменения
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+            >
+              Сохранить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! modal end -->
+
+    <!--! pagination start -->
+    <nav
+      aria-label="Page navigation example mt-5 w-100"
+    >
+      <ul class="pagination d-flex">
+        <li class="page-item prev">
+          <a class="page-link" href="#"
+            >Предыдущий</a
+          >
+        </li>
+        <div class="pagination-list d-flex"></div>
+        <li class="page-item next">
+          <a class="page-link" href="#"
+            >Следующий</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!--! pa gination ernbk -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

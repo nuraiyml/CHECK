@@ -1,0 +1,11 @@
+body {
+  background-color: beige;
+}
+
+.navbar {
+  background-color: grey;
+}
+
+.navbar-brand {
+  color: black;
+}
